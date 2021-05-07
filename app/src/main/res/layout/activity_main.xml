@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dato1"
+        android:hint="@string/dato_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:inputType="numberDecimal"
+
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dato2"
+        android:hint="@string/dato_2"
+        android:layout_below="@id/dato1"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/m_resultado"
+        android:layout_below="@id/dato2"
+        android:text="@string/resultado"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sumar"
+        android:text="@string/sumar"
+        android:layout_below="@id/m_resultado"
+        android:backgroundTint="@color/teal_200"
+
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/restar"
+        android:text="@string/restar"
+        android:layout_toEndOf="@id/sumar"
+        android:layout_below="@id/m_resultado"
+        android:layout_marginStart="45dp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/teal_200"
+
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/multiplicar"
+        android:text="@string/multiplicar"
+        android:layout_below="@id/sumar"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/teal_200"
+
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dividir"
+        android:text="@string/dividir"
+        android:layout_toEndOf="@id/multiplicar"
+        android:layout_below="@id/restar"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="45dp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/teal_200"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imagencal"
+        android:src="@drawable/calculadora_imagen"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
